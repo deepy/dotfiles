@@ -5,7 +5,6 @@ antigen bundle robbyrussell/oh-my-zsh plugins/autojump
 antigen bundle robbyrussell/oh-my-zsh plugins/tmux
 antigen bundle robbyrussell/oh-my-zsh plugins/zsh-syntax-highlighting
 antigen theme robbyrussell/oh-my-zsh themes/gallifrey
-antigen theme gallifrey
 
 antigen bundle common-aliases
 
