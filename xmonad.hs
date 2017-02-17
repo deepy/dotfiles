@@ -18,7 +18,7 @@ main = do
         , modMask = mod4Mask     -- Rebind Mod to the Windows key
         , startupHook = setWMName "LG3D"
         } `additionalKeys`
-        [ ((mod4Mask .|. shiftMask, xK_z), spawn "xscreensaver-command -lock")
+        [ ((mod4Mask .|. shiftMask, xK_z), spawn "i3lock")
         , ((mod4Mask .|. shiftMask, xK_q), kill)
         , ((controlMask, xK_Print), spawn "sleep 0.2; scrot -s")
         , ((0, xK_Print), spawn "scrot")
