@@ -10,7 +10,10 @@ Plugin 'wincent/command-t'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
 Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'samsonw/vim-task'
 
 call vundle#end()
 filetype plugin indent on
 
+set cursorline
+hi CursorLine gui=underline cterm=underline
