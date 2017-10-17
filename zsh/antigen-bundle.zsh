@@ -1,10 +1,9 @@
-antigen use oh-my-zsh
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle robbyrussell/oh-my-zsh plugins/git
 antigen bundle robbyrussell/oh-my-zsh plugins/autojump
 antigen bundle robbyrussell/oh-my-zsh plugins/tmux
 antigen bundle robbyrussell/oh-my-zsh plugins/zsh-syntax-highlighting
-antigen theme robbyrussell/oh-my-zsh themes/gallifrey
+antigen theme https://github.com/deepy/zsh-theme.git not-gallifrey
 
 antigen bundle common-aliases
 
