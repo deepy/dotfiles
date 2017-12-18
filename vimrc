@@ -15,5 +15,8 @@ Plugin 'samsonw/vim-task'
 call vundle#end()
 filetype plugin indent on
 
+"No mouse please"
+set mouse=""
+
 set cursorline
 hi CursorLine gui=underline cterm=underline
