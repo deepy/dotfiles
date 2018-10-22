@@ -17,5 +17,6 @@ fi
 
 source ~/antigen.zsh
 source ~/dotfiles/zsh/antigen-bundle.zsh
+source ~/dotfiles/zsh/global.zsh
 source ~/dotfiles/zsh/keybinds.zsh
 source ~/local.zsh
