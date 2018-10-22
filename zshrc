@@ -1,12 +1,21 @@
-source ~/antigen/antigen.zsh
+# OS detection
+if [[ `uname` == 'Darwin' ]]; then
+    CURRENT_OS='OS X'
+else
+    # Must be Linux, determine distro
+    if [[ -f /etc/redhat-release ]]; then
+        # CentOS or Redhat?
+        if grep -q "CentOS" /etc/redhat-release; then
+            DISTRO='CentOS'
+        else
+            DISTRO='RHEL'
+        fi
+    elif [[ -f /etc/debian_version ]]; then
+        DISTRO='debian'
+    fi
+fi
+
+source ~/antigen.zsh
 source ~/dotfiles/zsh/antigen-bundle.zsh
 source ~/dotfiles/zsh/keybinds.zsh
 source ~/local.zsh
-
-
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="/home/alex/.sdkman"
-[[ -s "/home/alex/.sdkman/bin/sdkman-init.sh" ]] && source "/home/alex/.sdkman/bin/sdkman-init.sh"
-
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
