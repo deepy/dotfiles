@@ -1,0 +1,4 @@
+--type-add
+xsl:*.xsl
+--type-add
+gradle:*.gradle
